@@ -109,10 +109,10 @@ def sortBooks(control, size):
     """
     # TODO completar los cambios del return en el sort para el lab 4 (Parte 2).
     start_time = getTime()
-    model.sortBooks(control["model"], size)
+    lista_ordenada = model.sortBooks(control["model"], size)
     end_time = getTime()
     delta_time = deltaTime(start_time, end_time)
-    return delta_time
+    return delta_time, lista_ordenada
 
 
 # Funciones de consulta sobre el catálogo
